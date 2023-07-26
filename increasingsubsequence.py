@@ -9,7 +9,7 @@ class Solution:
             for i in arr:
                 if i > prev:
                     count = count+1
-                prve = i
+                prev = i
             # for i in range(len(arr)):
             #     if arr[i] > prev:
             #         count = count + 1
