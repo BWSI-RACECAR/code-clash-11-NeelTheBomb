@@ -15,6 +15,8 @@ class Solution:
                 else:
                      count = 0
             print(greatest)
+            if greatest == 0:
+                greatest = 1
             return greatest
                  
             
