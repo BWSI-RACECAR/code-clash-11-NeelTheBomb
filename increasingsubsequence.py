@@ -8,7 +8,7 @@ class Solution:
             for i in range(len(arr)):
                 if arr[i] > prev:
                     count = count + 1
-                    prev = arr
+                    prev = arr[i]
                     if count > greatest:
                         greatest = count
                 else:
