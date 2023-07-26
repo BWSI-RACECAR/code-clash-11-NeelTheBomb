@@ -3,6 +3,7 @@ class Solution:
             count = 0
             prev = 0 
             greatest = 0
+            print(arr)
             #type arr: list of int
             #return type: int
             for i in range(len(arr)):
@@ -13,6 +14,7 @@ class Solution:
                         greatest = count
                 else:
                      count = 0
+            print(greatest)
             return greatest
                  
             
