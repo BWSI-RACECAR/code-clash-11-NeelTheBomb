@@ -1,7 +1,7 @@
 class Solution:
     def find_longest_increasing_subsequence(self, arr):
             count = 0
-            prev = 0 
+            prev = arr[0]-1
             greatest = 0
             print(arr)
             #type arr: list of int
