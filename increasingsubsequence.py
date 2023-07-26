@@ -5,8 +5,8 @@ class Solution:
             greatest = 0
             #type arr: list of int
             #return type: int
-            for i in arr:
-                if i > prev:
+            for i in range(len(arr)):
+                if arr[i] > prev:
                     count = count + 1
                     prev = arr
                     if count > greatest:
