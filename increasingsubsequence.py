@@ -1,0 +1,32 @@
+class Solution:
+    def find_longest_increasing_subsequence(self, arr):
+            count = 0
+            prev = 0 
+            greatest = 0
+            #type arr: list of int
+            #return type: int
+            for i in arr:
+                if i > prev:
+                    count = count + 1
+                    prev = arr
+                    if count > greatest:
+                        greatest = count
+                else:
+                     count = 0
+            return greatest
+                 
+            
+            #TODO: Write code below to return an int with the solution to the prompt.
+            pass
+
+def main():
+    array = input().split(" ")
+    for x in range (0, len(array)):
+        array[x] = int(array[x])
+
+    tc1 = Solution()
+    ans = tc1.find_longest_increasing_subsequence(array)
+    print(ans)
+
+if __name__ == "__main__":
+    main()
