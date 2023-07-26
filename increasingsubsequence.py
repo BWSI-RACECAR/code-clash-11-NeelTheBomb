@@ -9,11 +9,11 @@ class Solution:
             for i in range(len(arr)):
                 if arr[i] > prev:
                     count = count + 1
-                    prev = arr[i]
                     if count > greatest:
                         greatest = count
                 else:
                      count = 0
+                prev = arr[i]
             #if greatest == 0:
                # greatest = 1
             print(greatest)
