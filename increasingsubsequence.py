@@ -6,18 +6,22 @@ class Solution:
             print(arr)
             #type arr: list of int
             #return type: int
-            for i in range(len(arr)):
-                if arr[i] > prev:
-                    count = count + 1
-                    if count > greatest:
-                        greatest = count
-                else:
-                     count = 0
-                prev = arr[i]
-            #if greatest == 0:
-               # greatest = 1
+            for i in arr:
+                if i > prev:
+                    count = count+1
+                prve = i
+            # for i in range(len(arr)):
+            #     if arr[i] > prev:
+            #         count = count + 1
+            #         if count > greatest:
+            #             greatest = count
+            #     else:
+            #          count = 0
+            #     prev = arr[i]
+            # #if greatest == 0:
+            #    # greatest = 1
             print(greatest)
-            return greatest
+            return count
                  
             
             #TODO: Write code below to return an int with the solution to the prompt.
