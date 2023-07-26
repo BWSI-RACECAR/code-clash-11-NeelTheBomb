@@ -14,9 +14,9 @@ class Solution:
                         greatest = count
                 else:
                      count = 0
-            print(greatest)
             if greatest == 0:
                 greatest = 1
+            print(greatest)
             return greatest
                  
             
